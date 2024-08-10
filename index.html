@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Portafolio</title>
+  <link rel="stylesheet" href="Estilos/Estilo.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="vista/Proyectos.html">Proyectos</a></li>
+        <li><a href="vista/juego.html">juego</a></li>
+
+      </ul>
+      <div class="tabs">
+        <button class="tab-button" onclick="changeStyle('uno')">Rosa</button>
+        <button class="tab-button" onclick="changeStyle('dos')">Azul</button>
+        <button class="tab-button" onclick="changeStyle('tres')">Verde</button>
+      </div>
+      
+    </nav>
+  </header>
+
+  <main>
+    <div class="container">
+        <div class="text">
+            <h1>¿Quien Soy?</h1>
+            <p class="parrafo">Soy Ramses programador web, me gustan los videojuegos, me dedico a realizar diferentes tipos de sitios web.</p>
+            <p class="parrafo-dos">Tengo varios conocimientos acerca de las tecnologias de porgramcion, una de ellas es manejo de desarrollo web en frond-end y manejo de back-end que serian creacion de algoritmos y manejo de bases de datos.</p>
+            <p class="parrafo-tres">Si necesitas revisar que tipos de servicion necesites puedes visualizar los proyectos que reliace hasta la fecha.</p>
+          </div>
+        <div class="image">
+            <img src="imagenes/pexels-nemuel-6424589.jpg" alt="Descripción de la imagen">
+        </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Portafolio de Ramses</p>
+  </footer>
+
+  <script>
+    function changeStyle(style) {
+      document.body.className = style;
+    }
+  </script>
+</body>
+</html>
